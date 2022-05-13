@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+body {
+    background-color: rgb(211, 210, 210);
+    font-family: 'Poppins', sans-serif;
+}
+
+.header .h1-1,.h1-2{
+    text-align: center;
+    font-weight: 300px;
+}
+.h1-1{
+    color: rgb(73, 73, 73);
+    font-weight: 200;
+}
+
+.header{
+    padding-top: 30px;
+    margin: auto;
+    text-align: center;
+    
+}
+.header p{
+    font-size: 14px;
+    margin: auto;
+    max-width: 35%;
+    padding: 20px;
+    color: rgb(95, 95, 95);
+}
+.cont-items{
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    display: flex;
+    padding-top: 20px;
+}
+.div1{
+    width: 270px;
+    height: 200px;
+    background-color: white;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 5%), 0 6px 6px rgb(0 0 0 / 10%)
+}
+.div1::after{
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    content: "";
+    top: 0;
+}
+.Kar::after{
+    background-color: hsl(34, 97%, 64%);
+    
+}
+.Cal::after{
+    background-color: hsl(212, 86%, 64%);
+}
+.Team::after{
+    background-color: hsl(0, 78%, 62%);
+}
+.Sup::after{
+    background-color: hsl(180, 62%, 55%);
+}
+
+.div1-cont{
+    padding: 20px;
+}
+.img-1 img{
+    padding-top: 35px;
+    display: block;
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+}
+.SupCal{
+    transform: translateY(50%);
+    margin-right: 30px;
+    margin-left: 15px;
+}
+.Kar-1{
+    margin-top: 20px;
+}
+.div1-cont p{
+    padding: 10px 0;
+    font-size: 14px;
+    color: rgb(128, 123, 123);
+}
+@media screen and (max-width:800px){
+    .div1{
+      width: 88%; 
+      height: 210px;
+      margin: 20px 0; 
+    }
+    .SupCal{
+        transform: translateY(0);
+    }
+    .header p{
+        max-width: 85%;
+    }
+}
